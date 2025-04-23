@@ -1,3 +1,5 @@
+<div align="justify">
+
 # Ramificación y Poda para Camino de Coste Mínimo
 
 Este repositorio alberga una solución en C++ que aplica el método de **ramificación y poda** (branch & bound) para encontrar el camino de mínima dificultad en una cuadrícula bidimensional. Cada celda de la malla está asociada a un valor natural que representa su coste de acceso, y el objetivo es conectar la esquina superior izquierda con la inferior derecha minimizando la suma de todos los costes. La estrategia aprovecha cotas optimistas y pesimistas para descartar de forma sistemática aquellas ramas de la búsqueda que no pueden conducir a una solución mejor que la ya conocida, garantizando así un uso eficiente de los recursos computacionales.
@@ -25,3 +27,5 @@ La aplicación demuestra su superioridad frente a enfoques exhaustivos y heurís
 ## Conclusiones
 
 El empleo combinado de cotas optimistas ligeras y una cota pesimista inicial robusta convierte al método de ramificación y poda en una técnica práctica y escalable para problemas de optimización en grafos implícitos. La capacidad de rechazar sin ambages subárboles enteros reduce drásticamente el número de nodos explorados y, por ende, el tiempo de cómputo, manteniendo al mismo tiempo la garantía de optimalidad. Este enfoque, gracias a su flexibilidad para integrar nuevas estrategias de poda o heurísticas, puede extenderse a multitud de dominios donde resulte crítico encontrar soluciones óptimas de forma eficiente.
+
+</div>
