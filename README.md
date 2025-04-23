@@ -4,6 +4,8 @@
 
 Este repositorio alberga una solución en C++ que aplica el método de **ramificación y poda** (branch & bound) para encontrar el camino de mínima dificultad en una cuadrícula bidimensional. Cada celda de la malla está asociada a un valor natural que representa su coste de acceso, y el objetivo es conectar la esquina superior izquierda con la inferior derecha minimizando la suma de todos los costes. La estrategia aprovecha cotas optimistas y pesimistas para descartar de forma sistemática aquellas ramas de la búsqueda que no pueden conducir a una solución mejor que la ya conocida, garantizando así un uso eficiente de los recursos computacionales.
 
+![image](https://github.com/user-attachments/assets/d666389b-0fa8-431a-80e7-34a79e2ff7db)
+
 ## Estructura del Nodo
 
 En el núcleo del algoritmo, cada nodo almacena su posición `(x,y)`, el coste acumulado desde el origen, una estimación optimista del coste restante hasta la meta y el histórico de casillas recorridas. Esta organización de datos permite priorizar la exploración de aquellos nodos cuyo `optimisticCost` resulte más prometedor, al tiempo que se preserva la información necesaria para reconstruir el camino completo una vez alcanzada la celda final.
